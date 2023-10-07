@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import React from 'react';
-import { technology } from '../assets/data.json';
+import { technology } from '../../public/data.json';
 import { Link } from 'react-router-dom';
 
 const Technology = () => {

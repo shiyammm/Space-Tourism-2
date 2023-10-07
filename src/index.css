@@ -9,3 +9,17 @@
 .active {
   border-bottom: 2.25px solid white;
 }
+@media (min-width: 1918px) {
+  .line {
+    width: 59.5rem;
+    height: 1px;
+    position: absolute;
+    left: 10rem;
+    background: white;
+    opacity: 0.2515;
+    z-index: 20;
+  }
+  .navbar {
+    position: relative;
+  }
+}

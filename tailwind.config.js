@@ -15,30 +15,24 @@ module.exports = {
         Bellefair: ['Bellefair', 'sans-serif'],
       },
       backgroundImage: {
-        'home-patternDesktop':
-          "url('/src/assets/home/background-home-desktop.jpg')",
-        'home-patternMobile':
-          "url('/src/assets/home/background-home-mobile.jpg')",
-        'home-patternTablet':
-          "url('/src/assets/home/background-home-tablet.jpg')",
+        'home-patternDesktop': "url('/home/background-home-desktop.jpg')",
+        'home-patternMobile': "url('/home/background-home-mobile.jpg')",
+        'home-patternTablet': "url('/home/background-home-tablet.jpg')",
         'destination-patternDesktop':
-          "url('/src/assets/destination/background-destination-desktop.jpg')",
+          "url('/destination/background-destination-desktop.jpg')",
         'destination-patternMobile':
-          "url('/src/assets/destination/background-destination-mobile.jpg')",
+          "url('/destination/background-destination-mobile.jpg')",
         'destination-patternTablet':
-          "url('/src/assets/destination/background-destination-tablet.jpg')",
-        'crew-patternDesktop':
-          "url('/src/assets/crew/background-crew-desktop.jpg')",
-        'crew-patternMobile':
-          "url('/src/assets/crew/background-crew-mobile.jpg')",
-        'crew-patternTablet':
-          "url('/src/assets/crew/background-crew-tablet.jpg')",
+          "url('/destination/background-destination-tablet.jpg')",
+        'crew-patternDesktop': "url('/crew/background-crew-desktop.jpg')",
+        'crew-patternMobile': "url('/crew/background-crew-mobile.jpg')",
+        'crew-patternTablet': "url('/crew/background-crew-tablet.jpg')",
         'technology-patternDesktop':
-          "url('/src/assets/technology/background-technology-desktop.jpg')",
+          "url('/technology/background-technology-desktop.jpg')",
         'technology-patternMobile':
-          "url('/src/assets/technology/background-technology-mobile.jpg')",
+          "url('/technology/background-technology-mobile.jpg')",
         'technology-patternTablet':
-          "url('/src/assets/technology/background-technology-tablet.jpg')",
+          "url('/technology/background-technology-tablet.jpg')",
       },
       screens: {
         '2/5xl': '1870px',

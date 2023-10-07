@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { destinations } from '../assets/data.json';
+import { destinations } from '../../public/data.json';
 import { Link } from 'react-router-dom';
 
 const Destination = () => {

@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { crew } from '../assets/data.json';
+import { crew } from '../../public/data.json';
 import { Link } from 'react-router-dom';
 
 const Crew = () => {
@@ -29,7 +29,7 @@ const Crew = () => {
           />
         </section>
         <section>
-          <div className="flex gap-5 md:absolute md:right-0 md:left-0 lg:left-[10rem] md:top-[20rem] lg:top-[48rem] justify-center lg:justify-start pt-[2rem] pb-7 md:mt-4 ">
+          <div className="flex gap-5 md:absolute md:right-0 md:left-0 lg:left-[10rem] md:top-[20rem] lg:top-[48rem] justify-center lg:justify-start pt-[2rem] pb-7 md:mt-14 ">
             {crew.map((member, index) => (
               <Link key={member.id}>
                 <button
@@ -45,21 +45,20 @@ const Crew = () => {
               </Link>
             ))}
           </div>
-          <div className='lg:pt-[12rem]'>
-
-          <div className="text-center lg:text-left grid gap-2 mb-4 md:pt-5">
-            <p className="text-[1rem] md:text-[1.5rem] lg:text-[2rem]  opacity-[0.4951] font-Bellefair uppercase">
-              {currentMember.role}
-            </p>
-            <h2 className="text-[1.5rem] md:text-[2.5rem] lg:text-[3.5rem] uppercase font-Bellefair">
-              {currentMember.name}
-            </h2>
-          </div>
-          <div className="w-[20.4375rem] md:w-[28.625rem] lg:w-[27.75rem] mx-auto lg:mx-0 text-[#D0D6F9] leading-[1.5625rem] md:leading-[1.75rem] lg:leading-[2rem]">
-            <p className="text-[0.9375rem] md:text-[1rem] lg:text-[1.125rem] text-center lg:text-left">
-              {currentMember.bio}
-            </p>
-          </div>
+          <div className="lg:pt-[12rem]">
+            <div className="text-center lg:text-left grid gap-2 mb-4 md:pt-5">
+              <p className="text-[1rem] md:text-[1.5rem] lg:text-[2rem]  opacity-[0.4951] font-Bellefair uppercase">
+                {currentMember.role}
+              </p>
+              <h2 className="text-[1.5rem] md:text-[2.5rem] lg:text-[3.5rem] uppercase font-Bellefair">
+                {currentMember.name}
+              </h2>
+            </div>
+            <div className="w-[20.4375rem] md:w-[28.625rem] lg:w-[27.75rem] mx-auto lg:mx-0 text-[#D0D6F9] leading-[1.5625rem] md:leading-[1.75rem] lg:leading-[2rem]">
+              <p className="text-[0.9375rem] md:text-[1rem] lg:text-[1.125rem] text-center lg:text-left">
+                {currentMember.bio}
+              </p>
+            </div>
           </div>
         </section>
       </main>
