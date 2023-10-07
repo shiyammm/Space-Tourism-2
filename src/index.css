@@ -9,3 +9,26 @@
 .active {
   border-bottom: 2.25px solid white;
 }
+.home {
+  width: 100%;
+  height: 100vh;
+}
+.bg-size {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home_bg {
+  background-image: url('./src/assets/home/background-home-mobile.jpg');
+}
+
+@media (max-width: 768px) {
+  .home_bg {
+    background-image: url('./src/assets/home/background-home-tablet.jpg');
+  }
+}
+@media (max-width: 1024px) {
+  .home_bg {
+    background-image: url('./src/assets/home/background-home-desktop.jpg');
+  }
+}
