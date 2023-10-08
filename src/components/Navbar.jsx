@@ -29,16 +29,16 @@ const Navbar = () => {
     },
   ];
   return (
-    <nav className="w-full absolute lg:pt-9 pl-8">
-      <div className="flex justify-between items-center ">
-        <div>
+    <nav className="w-full absolute pt-5 md:pt-0 lg:pt-9 pl-8">
+      <div className="flex justify-between">
+        <Link className='md:pt-5 logo' to="/home">
           <img src={logo} alt="logo" className="w-[2.5rem]" />
-        </div>
+        </Link>
         {/* Mobile view */}
         <div className="md:hidden ">
-          <div className="absolute right-8">
+          <div className="absolute right-8 ">
             <img
-              className="w-[1.5rem] relative z-10"
+              className="w-[2rem] relative z-10"
               src={toggle ? close : menu}
               alt="menu"
               onClick={() => setToggle((prev) => !prev)}
@@ -66,9 +66,9 @@ const Navbar = () => {
         </div>
         {/* Desktop View */}
         <div className="line " />
-        <div className="md:w-[28.125rem] navbar xl:w-[51.875rem] bg-shadow md:flex items-center text-[0.875rem] text-white font-Barlow-Condensed tracking-[0.14763rem] gap-9 pl-[3rem] hidden">
-          {NavLinks.map((link) => (
-            <NavLink key={link.id} to={`/${link.id}`} className="py-[2rem]">
+        <div className="md:w-[28.125rem]  xl:w-[51.875rem] bg-shadow md:flex items-center text-[0.875rem] text-white font-Barlow-Condensed tracking-[0.14763rem] gap-9 pl-[3rem] hidden">
+          {NavLinks.map((link)  => (
+            <NavLink key={link.id} to={`/${link.id}`} className="py-[2rem] navLink">
               {link.title}
             </NavLink>
           ))}

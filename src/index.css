@@ -3,23 +3,32 @@
 @tailwind utilities;
 
 .bg-shadow {
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(40.774227142333984px);
+  background: rgba(224,221,221,.2);
+  backdrop-filter: blur(1rem);
 }
 .active {
   border-bottom: 2.25px solid white;
 }
-@media (min-width: 1918px) {
-  .line {
-    width: 59.5rem;
-    height: 1px;
-    position: absolute;
-    left: 10rem;
-    background: white;
-    opacity: 0.2515;
-    z-index: 20;
-  }
-  .navbar {
-    position: relative;
+.line {
+  width: 100%;
+  height: 1px;
+  position: relative;
+  left: 2rem;
+  display: flex; 
+  margin-left: 5.5rem;
+  margin-top: 2.5rem;
+  background: white;
+  opacity: 0.2515;
+  z-index: 20;
+}
+.logo{
+  position: absolute;
+}
+.navLink:hover {
+  border-bottom: 2.25px solid white;
+}
+@media (max-width: 768px) {
+  .line{
+    display: none;
   }
 }
