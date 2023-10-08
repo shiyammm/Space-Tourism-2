@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { destinations } from  '../../public/data.json';
+import { destinations } from '../data.json';
 import { Link } from 'react-router-dom';
 
 const Destination = () => {
@@ -18,7 +18,7 @@ const Destination = () => {
         </span>{' '}
         Pick your destination
       </h1>
-      <main className='lg:flex lg:pt-[9rem] lg:pl-[10rem] lg:gap-[9rem] xl:gap-[14rem] 2xl:gap-[20rem] '>
+      <main className="lg:flex lg:pt-[9rem] lg:pl-[10rem] lg:gap-[9rem] xl:gap-[14rem] 2xl:gap-[20rem] ">
         <section>
           <img
             src={currentPlanet.images.webp}
@@ -26,7 +26,7 @@ const Destination = () => {
             className="w-[16.1875rem] h-[16.1875rem] md:w-[21.5625rem] md:h-[21.5625rem] xl:w-[30.375rem] xl:h-[30.375rem] mx-auto my-9"
           />
         </section>
-        <section >
+        <section>
           <div className="flex gap-9 leading-[1.5rem] item-center justify-center lg:justify-start ">
             {destinations.map((planet, index) => (
               <Link
