@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
-    <section className="bg-home-patternMobile h-screen bg-no-repeat bg-cover md:bg-home-patternTablet lg:bg-home-patternDesktop flex justify-center lg:justify-start lg:pl-[9rem] items-center ">
+    <section className="bg-home-patternMobile h-screen bg-no-repeat bg-cover md:bg-home-patternTablet lg:bg-home-patternDesktop flex justify-center lg:justify-start lg:pl-[9rem] items-center lg:pt-[17rem] ">
       <div className="text-white text-center lg:text-left lg:flex  ">
         <div>
           <h1 className="text-[#D0D6F9] font-Barlow-Condensed font-normal text-[1rem] md:text-[1.25rem] lg:text-[1.75rem] tracking-[0.16875rem] md:tracking-[0.21094rem] lg:tracking-[0.29531rem]">
