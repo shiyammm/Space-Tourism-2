@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import { crew } from '../assets/data.json';
+import { crew } from '../data.json';
 import { Link } from 'react-router-dom';
 
 const Crew = () => {
